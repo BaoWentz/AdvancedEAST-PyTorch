@@ -1,45 +1,24 @@
 # AdvancedEAST
-AdvancedEAST is an algorithm used for Scene image text detect,
-which is primarily based on
-[EAST:An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155v2),
-and the significant improvement was also made,
-which make long text predictions more accurate.
+AdvancedEAST-PyTorch is mainly inherited from
+[AdvancedEAST](https://github.com/huoyijie/AdvancedEAST),
+also we made some changes for better usage in PyTorch.
 If this project is helpful to you, welcome to star.
-And if you have any problem, please contact me.
-* email:yijie.huo@foxmail.com
-* website:[https://huoyijie.cn](https://huoyijie.cn)
 
-# advantages
-* writen in keras, easy to read and run
-* base on EAST, an advanced text detect algorithm
-* easy to train the model
-* significant improvement was made, long text predictions more accurate.(please
-see 'demo results' part bellow,
-and pay attention to the activation image,
-which starts with yellow grids, and ends with green grids.) 
-
-In my experiments,
-AdvancedEast has obtained much better prediction accuracy then East,
-especially on long text. Since East calculates final vertexes coordinates with
-weighted mean values of predicted vertexes coordinates of all pixels. It is too
-difficult to predict the 2 vertexes from the other side of the quadrangle.
-See East limitations picked from original paper bellow.
-![East limitations](image/East.limitations.png "East limitations")
+# New features
+* writen in PyTorch, easy to read and run
+* change the dataset into LMDB format, reduce I/O overhead
+* added precision/recall/F1_score output which is helpful when training the model
+* just run train.py to automatically start training
 
 # project files
-* config file:cfg.py,control parameters
-* pre-process data:
-    preprocess.py,resize image
-* label data:
-    label.py,produce label info
-* define network
-    network.py
-* define loss function
-    losses.py
-* execute training
-    advanced_east.py and data_generator.py
-* predict
-    predict.py and nms.py
+* config file: `cfg.py`,control parameters
+* **[optional]** *pre-process data: `preprocess.py` ,resize image*
+* **[optional]** *generate LMDB dataset: `imgs2LMDB.py`*
+* **[optional]** *label data: `label.py`, produce label info*
+* define network: `model_VGG.py`
+* define loss function: `losses.py`
+* execute training: `train.py` and `dataset.py`
+* predict: `predict.py` and `nms.py`
     
 **后置处理过程说明参见
 [后置处理(含原理图)](https://huoyijie.cn/blog/82c8e470-7562-11ea-98d3-6d733527e90f/play)**
