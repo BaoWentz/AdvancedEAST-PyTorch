@@ -58,26 +58,6 @@ and train respectively could speed up training process.
 * pretrain model download(use for test)
 链接: https://pan.baidu.com/s/1KO7tR_MW767ggmbTjIJpuQ 密码: kpm2
 
-# demo results
-![001原图](demo/001.png "001原图")
-![001激活图](demo/001.png_act.jpg "001激活图")
-![001预测图](demo/001.png_predict.jpg "001预测图")
-
-![004原图](demo/004.jpg "004原图")
-![004激活图](demo/004.jpg_act.jpg "004激活图")
-![004预测图](demo/004.jpg_predict.jpg "004预测图")
-
-![005原图](demo/005.png "005原图")
-![005激活图](demo/005.png_act.jpg "005激活图")
-![005预测图](demo/005.png_predict.jpg "005预测图")
-
-* compared with east based on vgg16
-
-As you can see, although the text area prediction is very accurate, the vertex coordinates are not accurate enough.
-
-![001激活图](demo/001.png_act_east.jpg "001激活图")
-![001预测图](demo/001.png_predict_east.jpg "001预测图")
-
 # License
 The codes are released under the MIT License.
 
@@ -92,7 +72,6 @@ The codes are released under the MIT License.
 **网络输出说明：
 输出层分别是1位score map, 是否在文本框内；2位vertex code，是否属于文本框边界像素以及是头还是尾；4位geo，是边界像素可以预测的2个顶点坐标。所有像素构成了文本框形状，然后只用边界像素去预测回归顶点坐标。边界像素定义为黄色和绿色框内部所有像素，是用所有的边界像素预测值的加权平均来预测头或尾的短边两端的两个顶点。头和尾部分边界像素分别预测2个顶点，最后得到4个顶点坐标。**
 
-[原理简介(含原理图)](https://huoyijie.cn/blog/9a37ea00-755f-11ea-98d3-6d733527e90f/play)
 
 **后置处理过程说明参见
 [后置处理(含原理图)](https://huoyijie.cn/blog/82c8e470-7562-11ea-98d3-6d733527e90f/play)**
