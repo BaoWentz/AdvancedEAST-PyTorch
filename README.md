@@ -49,7 +49,7 @@ data format details could refer to 'ICPR MTWI 2018 挑战赛二：网络图像�
 [Link](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.100066.0.0.3bcad780oQ9Ce4&raceId=231651)
 * modify config params in cfg.py, see default values.
 * **[optional]** *python preprocess.py, resize image to 256*256,384*384,512*512,640*640,736*736,
-*and train respectively could speed up training process.*
+and train respectively could speed up training process.*
 * **[optional]** *python imgs2LMDB.py, generate LMDB sataset
 * python train.py, train entrance
 * python predict.py -p demo/001.png, to predict
