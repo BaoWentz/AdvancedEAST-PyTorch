@@ -51,7 +51,7 @@ copy images to root dir, and copy txts to root dir,
 data format details could refer to [ICPR MTWI 2018 挑战赛二：网络图像的文本检测](https://tianchi.aliyun.com/competition/introduction.htm?spm=5176.100066.0.0.3bcad780oQ9Ce4&raceId=231651)
 * modify config params in `cfg.py`, see default values
 * **[optional]** ```python preprocess.py```, resize image to 256X256, 384X384, 512X512, 640X640, 736X736, 
-and train respectively could speed up training process
+and train one by one could speed up training process(依次训练可以加速模型收敛)
 * **[optional]** ```python imgs2LMDB.py```, generate LMDB sataset
 * ```python train.py```, train entrance
 * ```python predict.py -p demo/001.png```, to predict
