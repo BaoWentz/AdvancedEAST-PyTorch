@@ -29,11 +29,6 @@ If this project is helpful to you, welcome to star.
 
 [原理简介(含原理图)](https://huoyijie.cn/blog/9a37ea00-755f-11ea-98d3-6d733527e90f/play)
 
-* East
-
-![East network arch](image/East.network.png "East network arch")
-
-
 # setup
 * python 3.6.5
 * PyTorch-gpu 1.4.0
