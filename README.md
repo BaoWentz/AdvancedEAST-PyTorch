@@ -8,17 +8,19 @@ If this project is helpful to you, welcome to star.
 * writen in PyTorch, easy to read and run
 * change the dataset into LMDB format, reduce I/O overhead
 * added precision/recall/F1_score output which is helpful when training the model
-* just run train.py to automatically start training
+* just run `train.py` to automatically start training
 
 # project files
 * config file: `cfg.py`,control parameters
-* **[optional]** *pre-process data: `preprocess.py` ,resize image*
-* **[optional]** *generate LMDB dataset: `imgs2LMDB.py`*
+* pre-process data: `preprocess.py` ,resize image
+* generate LMDB dataset: `imgs2LMDB.py`
 * **[optional]** *label data: `label.py`, produce label info*
 * define network: `model_VGG.py`
 * define loss function: `losses.py`
-* execute training: `train.py` and `dataset.py`
+* execute training: `train.py` 
+* read LMDB dataset: `dataset.py`
 * predict: `predict.py` and `nms.py`
+* evaluate the model: `utils.py`
     
 **后置处理过程说明参见
 [后置处理(含原理图)](https://huoyijie.cn/blog/82c8e470-7562-11ea-98d3-6d733527e90f/play)**
