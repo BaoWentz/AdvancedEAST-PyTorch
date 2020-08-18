@@ -29,6 +29,8 @@ If this project is helpful to you, welcome to star.
 
 [原理简介(含原理图)](https://huoyijie.cn/blog/9a37ea00-755f-11ea-98d3-6d733527e90f/play)
 
+[后置处理(含原理图)](https://huoyijie.cn/blog/82c8e470-7562-11ea-98d3-6d733527e90f/play)
+
 # Setup
 * python 3.6.5
 * PyTorch-gpu 1.4.0
@@ -59,13 +61,9 @@ and train respectively could speed up training process
 # License
 The codes are released under the MIT License.
 
-# references
+# References
 * [EAST:An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155v2)
 
 * [CTPN:Detecting Text in Natural Image with Connectionist Text Proposal Network](https://arxiv.org/abs/1609.03605)
 
 * [Deep Matching Prior Network: Toward Tighter Multi-oriented Text Detection](https://arxiv.org/abs/1703.01425)
-
-
-**后置处理过程说明参见
-[后置处理(含原理图)](https://huoyijie.cn/blog/82c8e470-7562-11ea-98d3-6d733527e90f/play)**
