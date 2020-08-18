@@ -35,11 +35,15 @@ If this project is helpful to you, welcome to star.
 
 
 # setup
-* python 3.6.3+
-* tensorflow-gpu 1.5.0+(or tensorflow 1.5.0+)
-* keras 2.1.4+
-* numpy 1.14.1+
-* tqdm 4.19.7+
+* python 3.6.5
+* PyTorch-gpu 1.4.0
+* lmdb 0.98
+* numpy 1.19.0
+* tqdm 4.48.0
+* natsort 7.0.1
+* openCV 4.2.0
+* shapely 1.7.0
+* **[optional]** torchsummary
 
 # training
 * tianchi ICPR dataset download
@@ -67,10 +71,6 @@ The codes are released under the MIT License.
 * [CTPN:Detecting Text in Natural Image with Connectionist Text Proposal Network](https://arxiv.org/abs/1609.03605)
 
 * [Deep Matching Prior Network: Toward Tighter Multi-oriented Text Detection](https://arxiv.org/abs/1703.01425)
-
-
-**网络输出说明：
-输出层分别是1位score map, 是否在文本框内；2位vertex code，是否属于文本框边界像素以及是头还是尾；4位geo，是边界像素可以预测的2个顶点坐标。所有像素构成了文本框形状，然后只用边界像素去预测回归顶点坐标。边界像素定义为黄色和绿色框内部所有像素，是用所有的边界像素预测值的加权平均来预测头或尾的短边两端的两个顶点。头和尾部分边界像素分别预测2个顶点，最后得到4个顶点坐标。**
 
 
 **后置处理过程说明参见
