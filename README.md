@@ -56,7 +56,7 @@ and train one by one could speed up training process(依次训练可以加速模
 * ```python train.py```, train entrance
 * ```python predict.py -p demo/001.png```, to predict
 * pretrain model download(use for further training or test)
-链接: 未上传 密码: 未上传
+链接: 链接: https://pan.baidu.com/s/1q473YIt2b18RqpOT8rdY6g 提取码: nkit
 
 # License
 The codes are released under the MIT License.
